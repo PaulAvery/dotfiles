@@ -1,0 +1,6 @@
+#!/bin/bash
+source "$(wpmanager currentc)"
+
+dmenu="/usr/bin/dmenu -i -h 32 -nb '#1c1c1c' -nf '$COLOR9' -sb '$COLOR9' -sf '#1c1c1c'"
+
+j4-dmenu-desktop --dmenu="$dmenu"

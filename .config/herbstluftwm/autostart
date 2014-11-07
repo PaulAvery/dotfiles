@@ -1,0 +1,25 @@
+#!/bin/bash
+hc() {
+  cmds="$cmds , $@"
+}
+
+# load configs
+dir=~/.config/herbstluftwm/
+source "$(wpmanager currentc)"
+source $dir/config
+source $dir/apps
+
+# include other autostart stuff
+hc emit_hook reload
+
+source $dir/bindings
+source $dir/tags
+source $dir/theme
+source $dir/rules
+source $dir/bar
+
+# unlock, just to be sure
+hc unlock
+hc set tree_style '╾│ ├└╼─┐'
+
+herbstclient chain $cmds
