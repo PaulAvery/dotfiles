@@ -1,0 +1,14 @@
+#!/bin/bash
+# Reserve Space
+hc pad 0 32 0 0 0
+
+{
+  # Start panel
+  node --harmony ~/.config/bar/bar.js > >(bar -g x32 -B "#ff1c1c1c" -F "#ff"${COLOR9:1} | while read line; do eval "$line"; done) &
+  pidpanel=$!
+
+  # Stop panel on reload
+  sleep 1
+  herbstclient -w '(quit_panel|reload)'
+  kill $pidpanel
+} &

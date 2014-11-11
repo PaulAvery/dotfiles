@@ -1,0 +1,6 @@
+#!/bin/bash
+setxkbmap de
+feh --bg-fill --no-fehbg "$(wpmanager current)"
+cat "$(wpmanager currentx)" | xrdb -merge
+compton -i 0.8 -b --blur-background --blur-kern 7x7box --backend glx
+sudo cp "$(wpmanager current)" /usr/share/background.png
