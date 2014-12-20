@@ -19,5 +19,4 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'ssh'
 
-zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:prompt' theme 'sorin'
