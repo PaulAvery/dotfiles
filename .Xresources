@@ -1,10 +1,4 @@
 ! X configs (mostly URxvt and Xterm)
-! ~/.Xdefaults
-
-!:: Major X settings
-Xft.dpi:        95
-Xft.antialias:  true
-Xft.rgba:       rgb
 
 !:: Configure URxvt
 URxvt*termName: xterm-256color
@@ -14,12 +8,7 @@ urxvt.font:                 xft: Terminus:size=10
 urxvt.boldFont:             xft: Terminus:size=10
 
 urxvt.scrollBar:        false
-urxvt.internalBorder:   5
-
-! Clickable Urls
-urxvt.perl-ext: default,matcher,vtwheel
-urxvt.url-launcher:     /usr/bin/chrome
-urxvt.matcher.button:  1
+urxvt.internalBorder:   16
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
@@ -33,38 +22,10 @@ URxvt*scrollTtyKeypress: true
 urxvt.pointerColor:     black
 urxvt.pointerColor2:    #d9d9d9
 
-
-! molokai scheme
-*foreground: #D0D0D0
-*background: #1c1c1c
-
-! blacks
-*color0:     #2e3436
-*color8:     #555753
-
-! reds
-*color1:     #bf3f3f
-*color9:     #cd0000
-
-! greens
-*color2:    #afff00
-*color10:    #afff00
-
-! yellows
-*color3:     #ffff87
-*color11:    #ff8700
-
-! blues
-*color4:     #AF87FF
-*color12:    #AF87FF
-
-! magentas
-*color5:    #ff005f
-*color13:    #af005f
-
-! cyans
-*color6:     #06989a
-*color14:    #66d9ef
-
-*color7:     #e5e5e5
-*color15:    #e5e5e5
+! stuff
+*.background: #1f1f1f
+*.foreground: #c0b18b
+*.cursorColor:#c0b18b
+*.colorBD:    #c0b18b
+*.colorUL:    #c0b18b
+*.colorIT:    #c0b18b
