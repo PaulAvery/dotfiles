@@ -1,11 +1,15 @@
 #!/bin/bash
+# Configure any values in here
 
+# Modifier key
 export Mod=Mod4
 
+# Font, terminal and browser settings
 export font="terminus-10"
 export terminal="urxvt"
 export browser="google-chrome-stable"
 
+# Herbstluftwm layout settings
 export default_frame_layout=3
 
 export frame_border_width=0

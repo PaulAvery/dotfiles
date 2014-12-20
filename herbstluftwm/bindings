@@ -1,4 +1,5 @@
 #!/bin/bash
+# Keybindings for herbstluftwm
 
 # remove all existing keybindings
 hc keyunbind --all

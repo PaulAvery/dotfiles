@@ -1,4 +1,6 @@
 #!/bin/bash
+# Rules for herbstluftwm
+
 hc unrule -F
 hc rule focus=on # normally focus new clients
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on

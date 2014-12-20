@@ -1,4 +1,6 @@
 #!/bin/bash
+# Herbstclient config regarding colors and layout
+
 # padding
 hc set window_gap $window_gap
 hc set frame_gap $frame_gap
@@ -13,6 +15,6 @@ hc set frame_bg_transparent $frame_bg_transparent
 hc set frame_transparent_width $frame_transparent_width
 
 # colors
-hc set window_border_active_color "$COLOR9"
+hc set window_border_active_color "#c0b18b"
 hc set window_border_normal_color '#444444'
-hc set frame_border_active_color "$COLOR9"
+hc set frame_border_active_color "c0b18b"
