@@ -14,7 +14,7 @@ export default_frame_layout=3
 
 export frame_border_width=0
 export frame_border_inner_width=0
-export window_border_width=4
+export window_border_width=1
 export window_border_inner_width=0
 export frame_transparent_width=0
 
