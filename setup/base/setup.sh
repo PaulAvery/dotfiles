@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Enter directory of script
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+
 # Install stuff
 pacman -S --noconfirm base-devel git
 
