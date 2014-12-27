@@ -8,11 +8,11 @@ git clone https://github.com/tj/n
 # Build n
 cd n
 make
-sudo make install
+make install
 
 # Install node stable and dev versions
-sudo n 0.10
-sudo n 0.11
+n 0.10
+n 0.11
 
 # Cleanup
 cd ~
