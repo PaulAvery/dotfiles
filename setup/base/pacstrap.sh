@@ -22,7 +22,7 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 
 # Copy scripts to new system
 mkdir /mnt/root/setup
-cp ./* -r /mnt/root/setup
+cp $(pwd)/* -r /mnt/root/setup
 
 # Run commands inside new system
-arch-chroot /mnt /root/setup/chroot.sh
+arch-chroot /mnt /root/setup/base/chroot.sh
