@@ -22,6 +22,11 @@ read -p "Enter a root password: " password
 echo
 echo "root:$password" | chpasswd
 
+# Read and set hostname
+read -p "Enter a hostname: " hostname
+echo
+hostnamectl set-hostname $hostname
+
 # Read our UUIDs from /etc/fstab
 uroot=$(grep -oP "(?<=UUID=)\S*(?=\s*/\s)" /etc/fstab)
 proot=$(blkid -o value /dev/disk/by-uuid/$uroot | sed -n '4p')
