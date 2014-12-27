@@ -2,7 +2,7 @@
 
 # Setup intel driver, xbmc and dependencies
 pacman -S --noconfirm xf86-video-intel libva-intel-driver
-pacman -S --noconfirm xbmc shairport libplist lirc
+pacman -S --noconfirm xbmc shairport libplist lirc udisks unrar
 
 # Setup autostart
 aura -A --noconfirm xbmc-standalone-service
