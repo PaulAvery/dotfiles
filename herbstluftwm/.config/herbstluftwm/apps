@@ -1,0 +1,13 @@
+#!/bin/bash
+# Set keymap (keeps resetting for some reason)
+setxkbmap de
+
+# Set background
+feh --bg-fill --no-fehbg "$(wpmanager current)"
+
+# Set colors
+cat "$(wpmanager currentx)" | xrdb -merge
+
+# Start compton
+killall compton || true
+compton -b

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# We need this file because i cant seem to figure out how to spawn this from within a herbstluft binding
+lighthouse | sh
