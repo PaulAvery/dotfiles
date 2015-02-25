@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "bar-provider": "^1.0.1",
-    "dateformat": "^1.0.8",
-    "node-battery": "^0.2.2"
-  }
-}
