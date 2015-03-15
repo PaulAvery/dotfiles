@@ -20,3 +20,4 @@ source $dir/rules
 source $dir/bar
 
 herbstclient chain $cmds
+herbstclient unlock
