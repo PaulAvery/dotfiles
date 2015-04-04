@@ -1,0 +1,23 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/predawn (SL).tmTheme",
+	"theme": "predawn.sublime-theme",
+
+	"drag_text": false,
+	"highlight_line": true,
+	"match_selection": false,
+	"enable_tab_scrolling": false,
+	
+	"font_face": "Terminus",
+	"font_size": 15,
+	
+	"tabs_medium": true,
+	"findreplace_small": true,
+	"overlay_scroll_bars": "enabled",
+
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+
+	"update_check": false
+}
