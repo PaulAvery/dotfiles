@@ -2,7 +2,7 @@
 This repository contains my personal dotfiles, as well as wallpapers.
 
 ## Configs
-All configs are to be used with the `stow` utility. Included are configs for `compton`, `herbstluftwm`, `lighthouse` and `urxvt`.
+All configs are to be used with the `stow` utility. Included are configs for `compton`, `herbstluftwm`, `lighthouse`, `sublime` and `urxvt`.
 
 ## npm-snippets
 Some npm-snippets are needed from my [npm-snippets](https://github.com/paulavery/npm-snippets) repository for all of this to properly work.

@@ -1,20 +1,20 @@
 ! Basic urxvt config
-urxvt.font:					xft: Terminus:size=10
-urxvt.boldFont:				xft: Terminus:size=10
-urxvt.scrollBar:			false
-urxvt.internalBorder:		16
+urxvt.font:                 xft: Terminus:size=12
+urxvt.boldFont:             xft: Terminus:size=12
+urxvt.scrollBar:            false
+urxvt.internalBorder:       16
 
-URxvt*scrollTtyOutput:		false
-URxvt*scrollWithBuffer:		true
-URxvt*scrollTtyKeypress:	true
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
 
 ! Colors
-urxvt.pointerColor:		black
-urxvt.pointerColor2:	#d9d9d9
+urxvt.pointerColor:         black
+urxvt.pointerColor2:        #d9d9d9
 
-*.background: #1f1f1f
-*.foreground: #c0b18b
-*.cursorColor:#c0b18b
-*.colorBD:    #c0b18b
-*.colorUL:    #c0b18b
-*.colorIT:    #c0b18b
+*.background:               #1f1f1f
+*.foreground:               #c0b18b
+*.cursorColor:              #c0b18b
+*.colorBD:                  #c0b18b
+*.colorUL:                  #c0b18b
+*.colorIT:                  #c0b18b
