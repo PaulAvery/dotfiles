@@ -8,7 +8,6 @@ hc emit_hook reload
 
 # load configs
 dir=~/.config/herbstluftwm/
-source "$(wpmanager currentc)"
 source $dir/config
 source $dir/apps
 

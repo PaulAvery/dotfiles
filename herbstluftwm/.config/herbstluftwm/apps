@@ -3,10 +3,7 @@
 setxkbmap de
 
 # Set background
-feh --bg-fill --no-fehbg "$(wpmanager current)"
-
-# Set colors
-cat "$(wpmanager currentx)" | xrdb -merge
+hsetroot -fill "$(wpmanager currentp)"
 
 # Start compton
 killall compton || true
