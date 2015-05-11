@@ -1,6 +1,6 @@
 ! Basic urxvt config
-urxvt.font:                 xft: Terminus:size=12
-urxvt.boldFont:             xft: Terminus:size=12
+urxvt.font:                 xft: Terminus:size=16
+urxvt.boldFont:             xft: Terminus:size=16
 urxvt.scrollBar:            false
 urxvt.internalBorder:       16
 
