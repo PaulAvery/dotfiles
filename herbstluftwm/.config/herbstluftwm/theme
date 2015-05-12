@@ -15,6 +15,5 @@ hc set frame_bg_transparent $frame_bg_transparent
 hc set frame_transparent_width $frame_transparent_width
 
 # colors
-hc set window_border_active_color "#c0b18b"
-hc set window_border_normal_color '#444444'
-hc set frame_border_active_color "c0b18b"
+hc set window_border_active_color "$COLOR3"
+hc set window_border_normal_color "$COLOR0"
