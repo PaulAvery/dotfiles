@@ -1,14 +1,32 @@
 # My Dotfiles
 This repository contains my personal dotfiles, as well as wallpapers.
 
+![Screenshot](scrot.png)
+
 ## Configs
-All configs are to be used with the `stow` utility.
+All configs are to be used with the `stow` utility. Just apply as needed. I use the default grml-zsh-config, which is the reason for no zsh modding in this repository.
 
-## npm-snippets
+## Dependencies
+### Applications
+* [lighthouse](https://github.com/emgram769/lighthouse): Application Launcher
+* [bar](https://github.com/LemonBoy/bar): The top bar
+* [node/npm](https://nodejs.org/): JS runtime. Needed for some utilities
+* [urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode): The terminal emulator
+* [zsh](https://wiki.archlinux.org/index.php/Zsh): The shell
+* [herbstluftwm](https://wiki.archlinux.org/index.php/Herbstluftwm): The window manager
+* [compton](https://github.com/chjj/compton): An optional compositor
+
+### npm-snippets
 Some npm-snippets are needed from my [npm-snippets](https://github.com/paulavery/npm-snippets) repository for all of this to properly work.
+These provide the scripts for the lighthouse launcher and my lemonbar config.
 
-## Wallpapers
-Wallpapers are provided in [wpmanager](wpmanager) and are used by my [wpmanager](https://www.npmjs.com/package/wpmanager) utility.
+### NPM Modules
+Some npm modules need to be globally installed. Namely
 
-## Color-Schemes
-Colors are provided in [colors](colors) and use my [tstore](https://www.npmjs.com/package/tstore) utility for easy version controlling and usage all over the place.
+* [tstore](https://www.npmjs.com/package/tstore): cross-application JSON configs (e.g. colors)
+* [wpmanager](https://www.npmjs.com/package/wpmanager): Management of wallpapers
+* [quoty](https://www.npmjs.com/package/quoty): Quotes upon opening a terminal
+
+## gnupg
+My gpg config is part of a setup where the entire gnupg folder is located on a thumbdrive and mounted to `/media/gpg`.
+Therefore on each start of zsh, it checks if the folder exists and if it does, it starts gnupg. Also uses a gnupg authentication key as the ssh private key. Still a work in progress.
