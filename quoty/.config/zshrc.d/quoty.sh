@@ -1,5 +1,5 @@
 if [[ ! -o login ]]; then
-	quoty
+	tstore get quotes/calvin | quoty
 elif [[ -z $DISPLAY && ! $XDG_VTNR -eq 1 ]]; then
-	quoty
+	tstore get quotes/firefly | quoty
 fi
