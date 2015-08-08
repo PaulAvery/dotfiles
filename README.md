@@ -15,6 +15,8 @@ All configs are to be used with the `stow` utility. Just apply as needed. I use 
 * [zsh](https://wiki.archlinux.org/index.php/Zsh): The shell
 * [herbstluftwm](https://wiki.archlinux.org/index.php/Herbstluftwm): The window manager
 * [compton](https://github.com/chjj/compton): An optional compositor
+* [scrot](https://www.archlinux.org/packages/community/i686/scrot/): Take Screenshots
+* [imagemagick](https://www.archlinux.org/packages/extra/i686/imagemagick/): Used to make screenshots pretty
 
 ### npm-snippets
 Some npm-snippets are needed from my [npm-snippets](https://github.com/paulavery/npm-snippets) repository for all of this to properly work.
