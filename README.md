@@ -4,7 +4,7 @@ This repository contains my personal dotfiles, as well as wallpapers.
 ![Screenshot](scrot.png)
 
 ## Configs
-All configs are to be used with the `stow` utility. Just apply as needed. I use the default grml-zsh-config, which is the reason for no zsh modding in this repository.
+All configs are to be used with the `stow` utility. Just apply as needed. I use the default grml-zsh-config, which is the reason for hardly any zsh modding in this repository.
 
 ## Dependencies
 ### Applications
@@ -19,8 +19,7 @@ All configs are to be used with the `stow` utility. Just apply as needed. I use 
 * [imagemagick](https://www.archlinux.org/packages/extra/i686/imagemagick/): Used to make screenshots pretty
 
 ### npm-snippets
-Some npm-snippets are needed from my [npm-snippets](https://github.com/paulavery/npm-snippets) repository for all of this to properly work.
-These provide the scripts for the lighthouse launcher and my lemonbar config.
+Some snippets may be linked into your `~/bin/` folder. Make them available to your system by calling `npm link` inside each snippets directory.
 
 ### NPM Modules
 Some npm modules need to be globally installed. Namely
