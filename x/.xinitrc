@@ -1,5 +1,9 @@
-# let others define xinitrc entries
-for env in ~/.config/xinitrc.d/*; do source $env; done;
+# Merge .Xresources
+xrdb -merge ~/.Xresources
 
-# and if available, load a window manager
+# Load files defined by others
+for env in ~/.config/xinitrc.d/*; do source $env; done;
+for res in ~/.config/Xresources.d/*; do xrdb -merge $res; done;
+
+# And if available, load a window manager
 if [[ -e ~/.config/wm.sh ]]; then source ~/.config/wm.sh; fi;

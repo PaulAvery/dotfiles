@@ -1,0 +1,8 @@
+URxvt*font:                 xft: Terminus:size=16
+URxvt*boldFont:             xft: Terminus:size=16
+URxvt*scrollBar:            false
+URxvt*internalBorder:       16
+
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true

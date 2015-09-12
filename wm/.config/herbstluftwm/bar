@@ -1,7 +1,0 @@
-#!/bin/bash
-# Reserve Space
-hc pad 0 30 0 0 0
-
-# Start panel
-killall lemonbar || true
-my-bar | lemonbar -f Tewi -g x30 -B "$COLOR0" -F "$COLOR0" &

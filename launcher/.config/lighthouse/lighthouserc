@@ -7,7 +7,7 @@ cursor_padding=5
 y=35
 
 backspace_exit=0
-cmd=my-lighthouse
+cmd=~/lib/launcher/lighthouse.js
 
 query_fg=0.9,0.9,0.9
 query_bg=0.1,0.1,0.1

@@ -3,20 +3,29 @@ hc() {
   cmds="$cmds , $@"
 }
 
+av() {
+    hash $1 2>/dev/null
+}
+
 # Emit reload hook
 hc emit_hook reload
 
 # load configs
-dir=~/.config/herbstluftwm/
-source $dir/config
-source $dir/apps
-
-# include other autostart stuff
+dir=~/.config/herbstluftwm/scripts
 source $dir/bindings
 source $dir/tags
 source $dir/theme
-source $dir/rules
-source $dir/bar
+source $dir/windows
 
+# Set background
+av hsetroot && av wpmanager && hsetroot -fill "$(wpmanager currentp)" || true
+
+# Start compositor
+av compositor && compositor || true
+
+# Run all commands and unlock herbstluftwm
 herbstclient chain $cmds
 herbstclient unlock
+
+# Start Bar
+av bar && herbstclient pad 0 $(bar) || true
