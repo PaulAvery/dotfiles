@@ -1,16 +1,12 @@
+'use strict';
 var battery = require('node-battery');
+var colors = require('./colors');
 
-exports.get = function *() {
-	return yield function(cb) {
-		battery.percentages(function(data) {
-			var icon;
+exports.get = function *(util) {
+	let data = yield (cb) => battery.percentages(p => cb(null, p), 0);
 
-			if(data[0] > 15) icon = '⭪';
-			if(data[0] > 40) icon = '⭫';
-			if(data[0] > 65) icon = '⭨';
-			if(data[0] <= 15) icon = '⭩';
+	let left = Array(Math.ceil(data[0] / 10) + 1).join('|');
+	let right = Array(11 - Math.ceil(data[0] / 10)).join('|');
 
-			cb(null, typeof data[0] === 'number' ? ' ' + icon + ' ' + data[0] + ' ' : '');
-		}, 0);
-	};
+	return ' ' + left + (yield util.color(colors[0], right)) + ' ';
 };

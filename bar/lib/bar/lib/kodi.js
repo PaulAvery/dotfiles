@@ -29,12 +29,12 @@ module.exports = function(host) {
 					'totaltime'
 				]);
 
-				var symbol = status.speed === 0 ? ' ‖ ' : ' ▶ ';
+				var symbol = status.speed === 0 ? ' | ' : ' > ';
 				var source = item.item.showtitle || item.item.artist;
 
 				return symbol + item.item.title + (source ? ' - ' + source : '') + ' ';
 			} else {
-				return ' Stopped ';
+				return ' . ';
 			}
 		},
 

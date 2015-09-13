@@ -1,21 +1,23 @@
 #!/usr/bin/env node
 var Bar = require('bar-provider');
-var tstore = require('tstore');
 var tags = require('./tags.js');
 var date = require('./date.js');
 var kodi = require('./kodi.js')('flo-kodi');
+var window = require('./window');
 var battery = require('./battery.js');
-
-var colors = tstore.get('colors').palette.map(c => '#' + c.rgb.map(r => ('0' + r.toString(16)).substr(-2)).join(''));
+var colors = require('./colors');
 
 //Setup bar provider
 var bar = new Bar()
 	.left()
-		.bg(colors[5], tags.get)
+		.raw(' ')
+		.raw(tags.get)
+		.raw(window.get)
 	.right()
-		.bg(colors[7], kodi.get)
-		.bg(colors[4], battery.get)
-		.bg(colors[6], date.get);
+		.color(colors[7], kodi.get)
+		.color(colors[7], battery.get)
+		.raw(date.get)
+		.raw(' ');
 
 //update bar every 5 seconds
 bar.interval(5000);
@@ -23,3 +25,4 @@ bar.interval(5000);
 //update on tag change
 tags.wait(bar);
 kodi.wait(bar);
+window.wait(bar);
