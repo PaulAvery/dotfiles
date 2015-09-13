@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 40 0 0 0
+echo 50 0 0 0
 
 killall lemonbar 2>/dev/null || true
-~/lib/bar/lib/bar.js | lemonbar -f 'profont' -g x40 -B '#'$(tstore get colors.background | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")') -F '#'"$(tstore get colors.foreground | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")')" >/dev/null &
+~/lib/bar/lib/bar.js | lemonbar -f 'ProFontIIX:size=16' -g x50 -B '#'$(tstore get colors.background | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")') -F '#'"$(tstore get colors.foreground | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")')" >/dev/null &

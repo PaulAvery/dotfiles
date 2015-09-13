@@ -34,7 +34,7 @@ module.exports = function(host) {
 
 				return symbol + item.item.title + (source ? ' - ' + source : '') + ' ';
 			} else {
-				return ' . ';
+				return '';
 			}
 		},
 
