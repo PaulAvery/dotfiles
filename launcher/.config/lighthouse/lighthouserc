@@ -1,9 +1,9 @@
-font_name=Monaco
-font_size=22
+font_name=ProFontIIX
+font_size=24
 
-height=50
+height=36
 width=600
-cursor_padding=5
+horiz_padding=10
 y=35
 
 backspace_exit=0

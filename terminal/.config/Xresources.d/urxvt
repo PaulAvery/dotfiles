@@ -1,5 +1,7 @@
-URxvt*font:                 xft: Terminus:size=16
-URxvt*boldFont:             xft: Terminus:size=16
+URxvt*font:                 xft:ProFontIIX:pixelsize=16
+URxvt*boldFont:
+Xft.dpi:                    141
+
 URxvt*scrollBar:            false
 URxvt*internalBorder:       16
 
