@@ -1,2 +1,2 @@
-export GNUPGHOME="/media/gpg/gnupg"
-export SSH_AUTH_SOCK="/media/gpg/gnupg/S.gpg-agent.ssh"
+export GNUPGHOME=~/gpg
+export SSH_AUTH_SOCK=~/gpg/S.gpg-agent.ssh
