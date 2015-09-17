@@ -1,5 +1,5 @@
 /* eslint-disable new-cap */
-var kodiws = require('xbmc-ws');
+var kodiws = require('kodi-ws');
 
 module.exports = function(host) {
 	var kodi = kodiws(host, 9090);
