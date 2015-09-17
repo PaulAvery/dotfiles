@@ -9,11 +9,11 @@ hc set frame_padding              0
 # borders / backgrounds
 hc set frame_border_width         0
 hc set frame_border_inner_width   0
-hc set window_border_width        1
+hc set window_border_width        2
 hc set window_border_inner_width  0
 hc set frame_bg_transparent       1
 hc set frame_transparent_width    0
 
 # colors
-hc set window_border_active_color $COLOR3
-hc set window_border_normal_color $COLOR0
+hc set window_border_active_color $(tstore get colors.palette | sx -jx "'#' + x[5].map(function(c) { return ('0' + c.toString(16)).substr(-2); }).join('')")
+hc set window_border_normal_color $(tstore get colors.background | sx -jx "'#' + x.map(function(c) { return ('0' + c.toString(16)).substr(-2); }).join('')")
