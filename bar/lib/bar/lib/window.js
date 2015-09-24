@@ -28,6 +28,14 @@ exports.wait = function(b) {
 		});
 	}
 
+	function waitClose() {
+		exec('herbstclient -w tag_flags', function() {
+			waitClose();
+			b.renderCo();
+		});
+	}
+
 	waitTitle();
 	waitFocus();
+	waitClose();
 };
