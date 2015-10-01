@@ -17,6 +17,7 @@ All configs are to be used with the `stow` utility. Just apply as needed. I use 
 * [compton](https://github.com/chjj/compton): An optional compositor
 * [scrot](https://www.archlinux.org/packages/community/i686/scrot/): Take Screenshots
 * [imagemagick](https://www.archlinux.org/packages/extra/i686/imagemagick/): Used to make screenshots pretty
+* [twmn](https://github.com/sboli/twmn): Used as a notification server
 
 ### npm-snippets
 Some snippets may be linked into your `~/bin/` folder. Make them available to your system by calling `npm link` inside each snippets directory.
