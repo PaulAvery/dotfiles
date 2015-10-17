@@ -1,10 +1,10 @@
 #!/bin/bash
 hc() {
-  cmds="$cmds , $@"
+	cmds="$cmds , $@"
 }
 
 av() {
-    hash $1 2>/dev/null
+	hash $1 2>/dev/null
 }
 
 # Emit reload hook
