@@ -6,3 +6,6 @@ tstore get colors.background | sx -jx "'URxvt*background: rgb:' + x.map(function
 tstore get colors.foreground | sx -jx "'URxvt*foreground: rgb:' + x.map(function(c) { return ('0' + c.toString(16)).substr(-2); }).join('/')" | xrdb -merge
 tstore get colors.cursor | sx -jx "'URxvt*cursorColor: rgb:' + x.map(function(c) { return ('0' + c.toString(16)).substr(-2); }).join('/')" | xrdb -merge
 tstore get colors.bold | sx -jx "'URxvt*colorBD: rgb:' + x.map(function(c) { return ('0' + c.toString(16)).substr(-2); }).join('/')" | xrdb -merge
+
+# Set font
+tstore get font.mono | sx -jx "'URxvt*font: xft:' + x" | xrdb -merge

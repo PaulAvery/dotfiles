@@ -1,4 +1,3 @@
-URxvt*font:                 xft:ProFontIIX:pixelsize=16
 URxvt*boldFont:
 
 URxvt*scrollBar:            false
