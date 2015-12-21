@@ -1,9 +1,11 @@
-font_name=ProFontIIX
-font_size=24
+font_name=Fira Mono
+font_size=20
 
-height=36
+height=34
 width=600
 horiz_padding=10
+cursor_padding=1
+line_gap=0
 y=35
 
 backspace_exit=0
