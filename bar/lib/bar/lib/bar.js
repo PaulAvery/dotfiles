@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 var Bar = require('bar-provider');
+var gpg = require('./gpg.js');
 var tags = require('./tags.js');
 var date = require('./date.js');
 var kodi = require('./kodi.js')('flo-kodi');
@@ -17,6 +18,7 @@ var bar = new Bar()
 		.color(colors[7], kodi.get)
 		.color(colors[7], battery.get)
 		.raw(date.get)
+		.raw(gpg.get)
 		.raw(' ');
 
 //update bar every 5 seconds
