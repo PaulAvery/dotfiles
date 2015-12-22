@@ -1,0 +1,57 @@
+"*":
+  "exception-reporting":
+    userId: "590744a0-553e-a785-7099-65d4d812dfbf"
+  welcome:
+    showOnStartup: false
+  core:
+    destroyEmptyPanes: false
+    autoHideMenuBar: true
+    themes: [
+      "nucleus-dark-ui"
+      "one-dark-syntax"
+    ]
+    excludeVcsIgnoredPaths: false
+  editor:
+    invisibles: {}
+    softTabs: false
+    tabLength: 4
+    showIndentGuide: true
+    softWrap: true
+    softWrapHangingIndent: 2
+    showInvisibles: true
+    fontFamily: "Fira Mono"
+    fontSize: 16
+  linter:
+    lintOnChangeInterval: 500
+    showInfoMessages: true
+    statusBar: "Show error of the selected line"
+    lintOnChange: true
+    errorPanelHeight: 51
+  "linter-eslint":
+    lintOnEdit: true
+    disableWhenNoEslintrcFileInPath: true
+  tabs:
+    showIcons: true
+    usePreviewTabs: true
+  "atom-typescript": {}
+  "linter-tslint":
+    tslintExecutablePath: "/usr/bin/tslint"
+  "linter-jsonlint":
+    jsonlintExecutablePath: "/usr/bin/jsonlint"
+  "atom-material-ui":
+    fontSize: "Big"
+    panelContrast: true
+    slimScrollbar: true
+    accentColor: "Green"
+  "file-icons":
+    onChanges: true
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+    autoActivationDelay: 300
+  hidpi:
+    cutoffHeight: 0
+    cutoffWidth: 0
+    manualResolutionScaleFactors: "2"
+    scaleFactor: 1.2
+  "tree-view":
+    hideIgnoredNames: true
