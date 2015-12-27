@@ -1,0 +1,1 @@
+(hash hsetroot && hash wpmanager && hsetroot -fill "$(wpmanager currentp)") || true

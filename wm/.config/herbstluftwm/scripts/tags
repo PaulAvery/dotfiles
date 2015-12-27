@@ -1,6 +1,3 @@
-#!/bin/bash
-# Tag definition for herbstluftwm
-
 # enumerate tags
 tag_names=( {1..4} )
 tag_keys=( {1..4} 0 )

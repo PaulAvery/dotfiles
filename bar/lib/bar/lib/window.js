@@ -15,22 +15,31 @@ exports.get = function *() {
 //Rerender on a tag change
 exports.wait = function(b) {
 	function waitTitle() {
-		exec('herbstclient -w window_title_changed', () => {
-			waitTitle();
+		exec('herbstclient -w window_title_changed', (e) => {
+			setTimeout(() => {
+				waitTitle();
+			}, e ? 200 : 0);
+
 			b.renderCo();
 		});
 	}
 
 	function waitFocus() {
-		exec('herbstclient -w focus_changed', function() {
-			waitFocus();
+		exec('herbstclient -w focus_changed', (e) => {
+			setTimeout(() => {
+				waitFocus();
+			}, e ? 200 : 0);
+
 			b.renderCo();
 		});
 	}
 
 	function waitClose() {
-		exec('herbstclient -w tag_flags', function() {
-			waitClose();
+		exec('herbstclient -w tag_flags', (e) => {
+			setTimeout(() => {
+				waitClose();
+			}, e ? 200 : 0);
+
 			b.renderCo();
 		});
 	}

@@ -17,11 +17,12 @@ All configs are to be used with the `stow` utility. Just apply as needed. I use 
 * [compton](https://github.com/chjj/compton): An optional compositor
 * [scrot](https://www.archlinux.org/packages/community/i686/scrot/): Take Screenshots
 * [imagemagick](https://www.archlinux.org/packages/extra/i686/imagemagick/): Used to make screenshots pretty
-* [twmn](https://github.com/sboli/twmn): Used as a notification server
+* [dunst](https://github.com/knopwob/dunst): Used as a notification server
 
 ### NPM Modules
 Some npm modules need to be globally installed. Namely
 
-* [tstore](https://www.npmjs.com/package/tstore): cross-application JSON configs (e.g. colors)
+* [shtore](https://www.npmjs.com/package/shtore): cross-application JSON configs (e.g. colors)
+* [confish](https://www.npmjs.com/package/confish): preparation of config files
 * [wpmanager](https://www.npmjs.com/package/wpmanager): Management of wallpapers
 * [quoty](https://www.npmjs.com/package/quoty): Quotes upon opening a terminal

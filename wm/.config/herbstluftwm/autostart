@@ -17,15 +17,9 @@ source $dir/tags
 source $dir/theme
 source $dir/windows
 
-# Set background
-av hsetroot && av wpmanager && hsetroot -fill "$(wpmanager currentp)" || true
-
-# Start compositor
-av compositor && compositor || true
+# Add padding
+herbstclient pad ${WMPADDINGX:-0} ${WMPADDINGY:-0}
 
 # Run all commands and unlock herbstluftwm
 herbstclient chain $cmds
 herbstclient unlock
-
-# Start Bar
-av bar && herbstclient pad 0 $(bar) || true

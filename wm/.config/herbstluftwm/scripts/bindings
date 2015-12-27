@@ -1,6 +1,3 @@
-#!/bin/bash
-# Keybindings for herbstluftwm
-
 # Set mod key to super
 Mod=Mod4
 

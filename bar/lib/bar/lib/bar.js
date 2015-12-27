@@ -25,6 +25,6 @@ var bar = new Bar()
 bar.interval(5000);
 
 //update on tag change
-tags.wait(bar);
 kodi.wait(bar);
+tags.wait(bar);
 window.wait(bar);
