@@ -1,16 +1,14 @@
 "*":
-  "exception-reporting":
-    userId: "590744a0-553e-a785-7099-65d4d812dfbf"
   welcome:
     showOnStartup: false
   core:
     destroyEmptyPanes: false
-    autoHideMenuBar: true
     themes: [
-      "nucleus-dark-ui"
-      "one-dark-syntax"
+      "atom-material-ui"
+      "duotone-dark-forest-syntax"
     ]
     excludeVcsIgnoredPaths: false
+    autoHideMenuBar: true
   editor:
     invisibles: {}
     softTabs: false
@@ -20,7 +18,7 @@
     softWrapHangingIndent: 2
     showInvisibles: true
     fontFamily: "Fira Mono"
-    fontSize: 16
+    fontSize: 18
   linter:
     lintOnChangeInterval: 500
     showInfoMessages: true
@@ -33,25 +31,29 @@
   tabs:
     showIcons: true
     usePreviewTabs: true
-  "atom-typescript": {}
-  "linter-tslint":
-    tslintExecutablePath: "/usr/bin/tslint"
-  "linter-jsonlint":
-    jsonlintExecutablePath: "/usr/bin/jsonlint"
   "atom-material-ui":
-    fontSize: "Big"
-    panelContrast: true
-    slimScrollbar: true
-    accentColor: "Green"
+    ui:
+      slimScrollbar: true
+      accentColor: "Green"
+    tabs:
+      rippleAccentColor: true
+    fonts:
+      fontSize: "Huge"
+    panels:
+      panelContrast: true
   "file-icons":
     onChanges: true
   "autocomplete-plus":
     confirmCompletion: "tab"
     autoActivationDelay: 300
-  hidpi:
-    cutoffHeight: 0
-    cutoffWidth: 0
-    manualResolutionScaleFactors: "2"
-    scaleFactor: 1.2
   "tree-view":
     hideIgnoredNames: true
+  minimap:
+    plugins:
+      cursorline: true
+  typewriter: {}
+  "exception-reporting":
+    userId: "5a19b382-c6a5-aa48-1196-c14d21ec5096"
+"source.gfm":
+  editor:
+    softWrap: true
