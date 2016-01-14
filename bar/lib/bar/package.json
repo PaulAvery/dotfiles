@@ -1,7 +1,7 @@
 {
   "name": "bar",
   "dependencies": {
-    "bar-provider": "^2.0.0",
+    "bar-provider": "^2.0.2",
     "dateformat": "^1.0.8",
     "kodi-ws": "^2.2.0",
     "node-battery": "^0.2.2",
