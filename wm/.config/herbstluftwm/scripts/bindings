@@ -10,7 +10,7 @@ hc keybind $Mod-Shift-c          close
 hc keybind $Mod-Shift-w          spawn wpmanager change
 
 #spawns
-hc keybind $Mod-Return           spawn urxvt
+hc keybind $Mod-Return           spawn terminal
 hc keybind $Mod-space            spawn launcher
 hc keybind $Mod-Control-s        spawn snap
 

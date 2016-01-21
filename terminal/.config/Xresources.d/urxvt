@@ -1,8 +1,0 @@
-URxvt*boldFont:
-
-URxvt*scrollBar:            false
-URxvt*internalBorder:       16
-
-URxvt*scrollTtyOutput:      false
-URxvt*scrollWithBuffer:     true
-URxvt*scrollTtyKeypress:    true

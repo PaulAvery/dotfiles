@@ -11,7 +11,7 @@ All configs are to be used with the `stow` utility. Just apply as needed. I use 
 * [lighthouse](https://github.com/emgram769/lighthouse): Application Launcher
 * [bar](https://github.com/LemonBoy/bar): The top bar
 * [node/npm](https://nodejs.org/): JS runtime. Needed for some utilities
-* [urxvt](https://wiki.archlinux.org/index.php/Rxvt-unicode): The terminal emulator
+* [termite](https://github.com/thestinger/termite): The terminal emulator
 * [zsh](https://wiki.archlinux.org/index.php/Zsh): The shell
 * [herbstluftwm](https://wiki.archlinux.org/index.php/Herbstluftwm): The window manager
 * [compton](https://github.com/chjj/compton): An optional compositor
