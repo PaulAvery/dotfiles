@@ -6,6 +6,6 @@ function xkcd
 	set Image (echo $Json | sx -jx x.img)
 	set Title (echo $Json | sx -jx x.safe_title)
 
-	seurat -i -w (tput cols) (curl -s $Image | psub)
-	echo $Title
+	echo -ne "\033]0;xkcd [$Title]\007"
+	seurat -i -w (tput cols) (curl -s $Image | psub) | less -~
 end
