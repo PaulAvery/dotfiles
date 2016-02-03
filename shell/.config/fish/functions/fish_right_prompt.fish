@@ -1,25 +1,3 @@
-function short_dir
-	set CURRENT (pwd)
-
-	if test (string sub -l (string length $HOME) $CURRENT) = $HOME
-		set CURRENT ~(string sub -s (expr 1 + (string length $HOME)) $CURRENT)
-	end
-
-	set PARTS (string split / $CURRENT)
-
-	set SHORT ''
-
-	if test (count $PARTS) -gt 1
-		for PART in $PARTS[1..-2]
-			set SHORT $SHORT(string sub -l 1 $PART)/
-		end
-	end
-
-	set SHORT $SHORT$PARTS[-1]
-
-	echo $SHORT
-end
-
 function git_status
 	if git rev-parse --is-inside-work-tree > /dev/null ^ /dev/null
 		set GITSTATUS (git status -b --porcelain --untracked-files)
@@ -51,6 +29,6 @@ function git_status
 end
 
 function fish_right_prompt
-	short_dir
+	prompt_pwd
 	git_status
 end
