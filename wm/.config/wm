@@ -1,2 +1,2 @@
-#!/bin/bash
-herbstluftwm --locked
+#!/usr/bin/fish
+exec herbstluftwm --locked

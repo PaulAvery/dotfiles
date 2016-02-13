@@ -1,0 +1,1 @@
+hsetroot -fill (wpmanager currentp)

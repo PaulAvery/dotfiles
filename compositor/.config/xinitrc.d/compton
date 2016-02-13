@@ -1,2 +1,0 @@
-killall compton 2>/dev/null || true
-(hash compton && compton -b) || true
