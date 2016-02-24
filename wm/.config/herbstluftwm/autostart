@@ -18,7 +18,7 @@ source $dir/theme
 source $dir/windows
 
 # Add padding
-herbstclient pad ${WMPADDINGX:-0} ${WMPADDINGY:-0}
+herbstclient pad 0 ${WMPADDINGY:-0} ${WMPADDINGX:-0}
 
 # Run all commands and unlock herbstluftwm
 herbstclient chain $cmds
