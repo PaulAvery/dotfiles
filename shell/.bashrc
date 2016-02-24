@@ -1,1 +1,1 @@
-exec fish -l
+exec fish
