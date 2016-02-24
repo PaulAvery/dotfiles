@@ -5,6 +5,7 @@ var date = require('./date.js');
 var kodi = require('./kodi.js')('flo-kodi');
 var window = require('./window');
 var battery = require('./battery.js');
+var updates = require('./updates.js');
 var colors = require('./colors');
 
 //Setup bar provider
@@ -17,6 +18,7 @@ var bar = new Bar()
 		.color(colors[7], kodi.get)
 		.color(colors[7], battery.get)
 		.raw(date.get)
+		.button(updates.update, updates.get)
 		.raw(' ');
 
 //update bar every 5 seconds
