@@ -12,7 +12,6 @@ for file in ~/.config/Xresources.d/*
 	xrdb -merge $file;
 end
 
-# And if available, load a window manager
-if test -e ~/.config/wm
-	exec ~/.config/wm
-end
+# And load a window manager
+exec wm
+
