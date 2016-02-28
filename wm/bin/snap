@@ -1,2 +1,2 @@
-#!/bin/bash
-scrot -ube 'convert $f \\( -clone 0 -background black -shadow 80x8+0+8 \\) -reverse -background none -layers merge +repage $f'
+#!/usr/bin/fish
+scrot -ube 'convert $f \\\\( -clone 0 -background black -shadow 80x8+0+8 \\\\) -reverse -background none -layers merge +repage $f'

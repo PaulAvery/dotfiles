@@ -1,12 +1,12 @@
-#!/bin/bash
-FONT=$(shtore get font.mono.family | sx -jx x)
-FONTSIZE=$(shtore get font.mono.size)
-FONTWEIGHT=$(shtore get font.mono.weight)
+#!/usr/bin/fish
+set FONT (shtore get font.mono.family | sx -jx x)
+set FONTSIZE (shtore get font.mono.size)
+set FONTWEIGHT (shtore get font.mono.weight)
 
-FONTXFT="$FONT:size=$FONTSIZE:weight=$FONTWEIGHT:hinting=true:antialias=true"
+set FONTXFT $FONT:size=$FONTSIZE:weight=$FONTWEIGHT:hinting=true:antialias=true
 
-HEIGHT="$(shtore get bar.height)"
-BACKGROUND="#$(shtore get colors.background | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")')"
-FOREGROUND="#$(shtore get colors.foreground | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")')"
+set HEIGHT (shtore get bar.height)
+set BACKGROUND \#(shtore get colors.background | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")')
+set FOREGROUND \#(shtore get colors.foreground | sx -jx 'x.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("")')
 
-exec ~/lib/bar/lib/bar.js | lemonbar -d -f "$FONTXFT" -g "x$HEIGHT" -B "$BACKGROUND" -F "$FOREGROUND" | bash
+~/lib/bar/lib/bar.js | lemonbar -d -f $FONTXFT -g x$HEIGHT -B $BACKGROUND -F $FOREGROUND | sh

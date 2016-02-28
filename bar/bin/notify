@@ -1,7 +1,2 @@
-#!/bin/bash
-set -e
-
-shtore all | confish ~/.config/dunstrc.dot > ~/.config/dunstrc
-
-killall dunst 2>/dev/null || true
-exec dunst
+#!/usr/bin/fish
+exec dunst -c (shtore all | confish ~/.config/dunstrc.dot | psub)

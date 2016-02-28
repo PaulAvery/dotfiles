@@ -1,6 +1,2 @@
-#!/bin/bash
-set -e
-
-shtore all | confish ~/.config/termite/config.dot > ~/.config/termite/config
-
-exec termite
+#!/usr/bin/fish
+exec termite -c (shtore all | confish ~/.config/termite/config.dot | psub)
