@@ -11,11 +11,7 @@ function countUpdates() {
 			count = '!';
 		} else {
 			exec('cower -u', (e, oc) => {
-				if(e) {
-					count = '!';
-				} else {
-					count = ou.toString('utf8').split('\n').length + oc.toString('utf8').split('\n').length - 2;
-				}
+				count = ou.toString('utf8').split('\n').length + oc.toString('utf8').split('\n').length - 2;
 			});
 		}
 	});
