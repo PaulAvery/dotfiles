@@ -1,6 +1,8 @@
 {
 	"foreground": [80, 88, 92],
 	"background": [0, 8, 12],
+	"foreground_secondary": [0, 8, 12],
+	"background_secondary": [80, 88, 92],
 	"cursor": [140, 140, 138],
 	"bold": [112, 120, 124],
 

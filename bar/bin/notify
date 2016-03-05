@@ -1,2 +1,2 @@
 #!/usr/bin/fish
-exec dunst -c (shtore all | confish ~/.config/dunstrc.dot | psub)
+exec dunst -conf (shtore all | confish ~/.config/dunstrc.dot | psub)

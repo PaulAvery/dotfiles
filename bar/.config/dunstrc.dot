@@ -7,8 +7,8 @@
 	alignment = left
 	word_wrap = yes
 	ignore_newline = no
-	geometry = "450x50-10+{{= it.bar.height + 10 }}"
-	shrink = yes
+	geometry = "1720x50+100-30"
+	shrink = no
 	show_indicators = yes
 	separator_height = 1
 	padding = 12
@@ -22,16 +22,16 @@
 	width = 0
 
 [urgency_low]
-	background = "#{{= it.colors.background.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
-	foreground = "#{{= it.colors.foreground.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
+	background = "#{{= it.colors.background_secondary.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
+	foreground = "#{{= it.colors.foreground_secondary.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
 	timeout = 10
 
 [urgency_normal]
-	background = "#{{= it.colors.background.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
-	foreground = "#{{= it.colors.foreground.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
+	background = "#{{= it.colors.background_secondary.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
+	foreground = "#{{= it.colors.foreground_secondary.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
 	timeout = 10
 
 [urgency_critical]
-	background = "#{{= it.colors.background.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
-	foreground = "#{{= it.colors.foreground.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
+	background = "#{{= it.colors.background_secondary.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
+	foreground = "#{{= it.colors.foreground_secondary.map(function (c) { return ("0" + c.toString(16)).substr(-2); }).join("") }}"
 	timeout = 0
