@@ -7,7 +7,7 @@ hc keyunbind --all
 # basics
 hc keybind $Mod-Shift-r          reload
 hc keybind $Mod-Shift-c          close
-hc keybind $Mod-Shift-w          spawn wpmanager change
+hc keybind $Mod-Shift-w          spawn changewp
 
 #spawns
 hc keybind $Mod-Return           spawn terminal

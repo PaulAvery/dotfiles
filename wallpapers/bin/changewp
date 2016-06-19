@@ -1,0 +1,2 @@
+#!/bin/fish
+wpmanager change; and hsetroot -center (wpmanager currentp)
