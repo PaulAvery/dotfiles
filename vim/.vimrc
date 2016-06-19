@@ -1,19 +1,22 @@
 "Plugin Setup
 	"Plugins
 		call plug#begin()
-			Plug 'bling/vim-airline'
+			Plug 'vim-airline/vim-airline'
+			Plug 'vim-airline/vim-airline-themes'
 			Plug 'sjl/gundo.vim'
-			Plug 'whatyouhide/vim-gotham'
+			Plug 'kristijanhusak/vim-hybrid-material'
 			Plug 'Valloric/YouCompleteMe', { 'do': 'python2 ./install.py --gocode-completer --omnisharp-completer --clang-completer' }
 		call plug#end()
 
 	"Setup plugins
 		nnoremap <leader>u :GundoToggle<CR>
-		let g:airline_left_sep = ''
-		let g:airline_right_sep = ''
+		let g:airline_powerline_fonts = 1
+		let g:airline_theme = 'hybrid'
 
 "Basic
-	colorscheme gotham256
+	set background=dark
+	colorscheme hybrid_material
+	autocmd ColorScheme * highlight Normal ctermbg=None
 	set shiftwidth=4
 	syntax enable
 	set tabstop=4
