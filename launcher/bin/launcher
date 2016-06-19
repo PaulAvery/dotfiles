@@ -1,2 +1,6 @@
 #!/usr/bin/fish
-lighthouse | sh
+set Foreground (shtore all | confish (echo '#{{= it.colors.foreground.map(c => (0 + c.toString(16)).substr(-2)).join("")}}' | psub))
+set Background (shtore all | confish (echo '#{{= it.colors.background.map(c => (0 + c.toString(16)).substr(-2)).join("")}}' | psub))
+set Font (shtore all | confish (echo '{{= it.font.mono.family}} {{= it.font.mono.size - 2}}' | psub))
+
+exec rofi -font $Font -bw 0 -padding 15  -lines 10 -width 30 -hide-scrollbar -line-margin 10 -fuzzy -color-window "$Background" -color-normal "$Background, $Foreground, $Background, $Foreground, $Background" -show run
