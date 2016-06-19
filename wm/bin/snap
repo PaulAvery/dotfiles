@@ -1,2 +1,2 @@
 #!/usr/bin/fish
-scrot -sbe 'convert $f \\\\( -clone 0 -background black -shadow 80x8+0+8 \\\\) -reverse -background none -layers merge +repage $f'
+sleep 0.5; scrot -sbe 'convert $f \\\\( -clone 0 -background black -shadow 80x8+0+8 \\\\) -reverse -background none -layers merge +repage $f'
