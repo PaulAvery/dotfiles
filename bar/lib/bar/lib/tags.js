@@ -10,7 +10,14 @@ exports.get = function *(util) {
 		let reg = /[\S]/;
 		let tags = res[0].split('\t').filter(s => reg.test(s));
 
-		return (yield tags.map(tag => util.color(tag[0] === '#' ? colors[7] : colors[0], ' ' + tag.substr(1) + ' '))).join('') + ' ';
+		return (yield tags.map(tag => {
+			let selected = tag[0] === '#';
+
+			let text = selected ? ' ● ' : ' ○ ';
+			let color = selected ? colors[7] : colors[0];
+
+			return util.color(color, text);
+		})).join('') + ' ';
 	} catch(e) {
 		return '';
 	}
