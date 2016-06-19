@@ -1,5 +1,5 @@
 # padding
-hc set window_gap                 5
+hc set window_gap                 32
 hc set frame_gap                  0
 hc set frame_padding              0
 
