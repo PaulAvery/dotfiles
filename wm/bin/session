@@ -1,0 +1,6 @@
+#!/bin/fish
+for file in ~/.config/fish/login/*
+	source $file
+end
+
+exec ~/.xinitrc

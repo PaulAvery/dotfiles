@@ -1,4 +1,4 @@
-/bar/.config/dunstrc
-/terminal/.config/termite/config
-/wallpapers/.config/wpmanager/.current
+/wm/.config/dunstrc
+/wm/.config/termite/config
+/wm/.config/wpmanager/.current
 node_modules
