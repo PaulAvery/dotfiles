@@ -12,6 +12,7 @@ ibfonts-meta-extended
 lemonbar-xft-git
 libu2f-host
 lightdm-webkit2-greeter
+nautilus
 openssh
 pacaur
 pkgfile
@@ -20,8 +21,10 @@ rsync
 screenfetch
 stow
 sublime-text-nightly
+sushi
 termite
 ttf-hack
+vertex-icons-git
 vi-vim-symlink
 xf86-video-intel
 xorg-xinit
