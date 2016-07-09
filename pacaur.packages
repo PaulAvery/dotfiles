@@ -1,5 +1,6 @@
 compton
 dunst
+feh
 firefox
 fish
 gparted
@@ -8,7 +9,6 @@ gtk-theme-arc
 herbstluftwm
 hsetroot
 ibfonts-meta-extended
-imagemagick
 lemonbar-xft-git
 libu2f-host
 lightdm-webkit2-greeter
@@ -17,7 +17,7 @@ pacaur
 pkgfile
 rofi
 rsync
-scrot
+screenfetch
 stow
 sublime-text-nightly
 termite
