@@ -13,6 +13,7 @@ hc keybind $Mod-Shift-w          spawn changewp
 hc keybind $Mod-Return           spawn terminal
 hc keybind $Mod-space            spawn launcher
 hc keybind $Mod-Control-s        spawn snap
+hc keybind $Mod-e                spawn subl3
 
 # basic movement
 # focusing clients
